@@ -1,17 +1,11 @@
-# csp-1819-2018-09-10-temp_conv
+#include <stdio.h>
+/* print Farenheit-Celsius table */
+int main(void)
+{
+      int fahr;
 
-- type the program from the code on the projection screen
-- compile and run - edit until it runs without errors
-- push your program into github
-- change the program so it displays f values from -100
-- compile and run - edit until it runs without errors
-- push your program into github
-- change the program so it displays f values from -100 to 100
-- compile and run - edit until it runs without errors
-- push your program into github
-- change the program so it displays f values from -100 to 100 in 10 degree increments
-- compile and run - edit until it runs without errors
-- push your program into github
-- change the program so it displays f values from -50 to 120 in 5 degree increments
-- compile and run - edit until it runs without errors
-- push your program into github
+      for (fahr = 0; fahr <= 100; fahr = fahr +20)
+      {
+          printf ("f - %3d c - %66.1f\n", fahr, (5.0/9.0)*(fahr-32));
+      }
+}
